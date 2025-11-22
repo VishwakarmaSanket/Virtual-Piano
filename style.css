@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor {
+    width: 40px;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.sound {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    background-color: #222;
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.sound i {
+    color: white;
+    font-size: 2rem;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    /* background: radial-gradient(circle at center, #444 0%, #0f0f0f 70%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+h1 {
+    text-align: center;
+    /* color: #24cfa5; */
+    color: #5c5dcb;
+    font-size: 4rem;
+}
+
+h2 {
+    text-align: center;
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.Piano {
+    height: 44vh;
+    width: 48vw;
+    padding: 20px 30px;
+    background-color: #222;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    height: 90%;
+    width: 10%;
+    padding: 10px;
+    background: linear-gradient(#ffffff, #e5e5e5);
+    border-radius: 0.8rem;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 800;
+}
+
+.key.active {
+    background: linear-gradient(#d9d9d9, #5c5dcb);
+    box-shadow: 0 0 20px rgba(118, 106, 255, 0.5);
+    transform: scale(0.97);
+}
+
+
+.key:active {
+    background: linear-gradient(#d9d9d9, #5c5dcb);
+    box-shadow: 0 0 20px rgba(118, 106, 255, 0.5);
+    transform: scale(0.97);
+}
+
+.key:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #888;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5c5dcb;
+}
